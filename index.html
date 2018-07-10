@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- following is a header meta I use for my personal website -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Rocky Li">
+
+    <title>Simple app</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    
+    <!-- Styling the sections -->
+    <style type="text/css">
+        .row {
+            min-height: 300px;
+            margin: 5px;
+        }
+        .insertarea{
+            padding: 5px;
+        }
+        table tr:nth-child(even) {
+            background: #eee;
+        }
+        table tr:nth-child(odd) { background: #dee; }
+    </style>
+
+</head>
+<body>
+    <div class="container" style="min-height:100px;">
+        <h1 class="text-center"> Simple Table Insert Function </h1>
+    </div>
+    <!-- Three different positions for the table to be for tables to be put in-->
+    <section id="s1">
+        <div class="container">
+            <div class="row">
+                <div class="insertarea col-md-8 bg-light">
+                    <button id="btn1" class="insert_on_click btn btn-primary">Insert Table</button>
+                </div>
+                <div class="insertarea col-md-4 bg-dark" style="padding: 3%;">
+                    <p class="text-white">
+                        How did you like it? Please also visit my <a href="http://aperocky.com">website</a> while you're here!
+                    </p>
+                    <p style="text-align: right;" class="text-white">
+                        Rocky Li
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="s2">
+        <div class="container">
+            <div class="row">
+                <div class="insertarea col-md-6 bg-dark" id="left">
+                    <button id="btn2" class="insert_on_click btn btn-primary">Insert Table</button>
+                </div>
+                <div class="insertarea col-md-6 bg-light" id="right">
+                    <button id="btn3" class="insert_on_click btn btn-primary">Insert Table</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="insert.js"></script>
+</body>
+</html>
